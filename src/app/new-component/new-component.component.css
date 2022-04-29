@@ -1,0 +1,160 @@
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+#user-chats-section {
+  background-color: rgb(192, 158, 223);
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat {
+  background-image: url(/assets/images/129813009-black-line-translator-icon-isolated-seamless-pattern-on-white-background-foreign-language-conversati.webp);
+  background-size: 20%;
+  height: 100%;
+  width: 75%;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+header {
+  font-family: 'Outfit', sans-serif;
+  background-color: rgb(133, 55, 206);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  padding: 1rem;
+}
+
+header h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header h1 a {
+  font-size: 2rem;
+  margin: 0 1.5rem 0 0;
+  color: rgba(255, 245, 238, 0.8);
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  text-shadow: 2px 2px 2px rgba(218, 218, 218, 0.5);
+}
+
+header div a {
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: seashell;
+  border: 2px solid rgb(92, 34, 141);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+header div a:hover {
+  background-color: rgb(150, 89, 206);
+}
+
+
+
+h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: seashell;
+  margin: 0.5rem;
+}
+
+section {
+  border: 2px solid rgb(92, 34, 141);
+  /* width: 100%; */
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.search input {
+  font-family: 'Outfit', sans-serif;
+  width: 50%;
+  height: 40%;
+  border:  1px solid rgb(92, 34, 141);
+  border-radius: 7px;
+  margin: 1rem;
+  background-color: rgb(244, 237, 249);
+}
+
+.search input:focus {
+  outline: none;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+#users-chats {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.active-user{
+  background-color: rgb(212, 194, 227);
+}
+
+.user {
+  border-bottom: 1px solid rgba(92, 34, 141, 0.5);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+ .user:hover {
+  background-color: rgb(203, 179, 225);
+ }
+
+.user img {
+  border-radius: 50px;
+  padding: 0.3rem 0.3rem;
+}
+
+.group-items {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.3rem;
+}
+.name {
+  font-family: 'Outfit', sans-serif;
+  padding: 0.3rem;
+  margin: 0;
+  color: seashell;
+  width: 100%;
+  text-align: left;
+}
+
+.last-message {
+  font-family: 'Outfit', sans-serif;
+  color: seashell;
+  margin: 0;
+  padding: 0.3rem;
+  background-color: rgb(150, 89, 206);
+  border-radius: 10px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+

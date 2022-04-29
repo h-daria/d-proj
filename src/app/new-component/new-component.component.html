@@ -1,0 +1,37 @@
+
+<header>
+  <h1>
+    <a href="">Messenger</a>
+    <img src="/assets/icons/icons8-user-64.png" alt="Current user image" id="current-user-img">
+  </h1>
+  <div>
+    <a href="">Log in</a>
+  </div>
+</header>
+
+<main>
+  <section id="user-chats-section">
+
+    <div class="search">
+      <h2>Chats</h2> 
+
+      <input type="text" placeholder="Search.." id="search-input">
+    </div>
+    <div id="users-chats">
+      <div *ngFor="let user of users" class="user" [routerLink]="['chat', user.id ]" routerLinkActive="active-user">
+        <img src={{user.userImagePath}} alt="User image" width="60" height="60">
+        <div class='group-items'> 
+          <p class="name">{{user.firstName}} {{user.lastName}}</p>
+          <p class="last-message">{{lastMessage(user).text}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chat">
+    <router-outlet></router-outlet>
+  </section>
+</main>
+
+<footer></footer>
+

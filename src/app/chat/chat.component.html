@@ -1,0 +1,17 @@
+<div style="position: relative;">
+  <div class="chat-messages">
+    <div class="messages" *ngFor="let message of user.messages">
+      <div [ngClass]="{'sent-message': message.sentByCurrentUser, 'received-message': !message.sentByCurrentUser}">
+        <span id="message-from">{{ message.sentByCurrentUser ? "Me" : user.firstName}}:</span> 
+        {{message.text}}
+        <span id="time">{{message.dateTime | date: 'medium'}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <textarea type="text" [(ngModel)]="inputText" placeholder="Enter message..." id="chat-input"></textarea>
+  </div>
+</div>
+
+ 
